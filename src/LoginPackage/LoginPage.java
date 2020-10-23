@@ -338,12 +338,15 @@ public class LoginPage extends javax.swing.JFrame {
             }
         });
     }
-    private String hostName = "db4free.net";                      //"localhost:3306";
-    private String databaseName = "online_voting";                //"raj";
-
+    
+    //You have to enter your remote database datails to make it working project                     //OR you can use local database 
+    //You can use free remote database i.g., db4free.com                                            //But it is limited to your PC only
+    
+    private String hostName = "/*Host name of your remote database provider*/";                      //"localhost:3306";
+    private String databaseName = "/*Name of your database*/";                                      //"raj";
     private String dbUrl = "jdbc:mysql://" + hostName + "/" + databaseName;
-    private String dbUsername = "raj_yug";                        //"root";
-    private String dbPassword = "db4free@123";                    //"MySQL@123";    
+    private String dbUsername = "/*Username of your remote database*/";                             //"root";
+    private String dbPassword = "/*Password of your remote database*/";                             //"MySQL@123";    
 
     public static boolean isConnected = false;
 
